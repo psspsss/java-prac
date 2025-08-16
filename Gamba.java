@@ -12,6 +12,8 @@ public class Gamba {
     double bet_amount;
     double payout;
 
+
+
     String[] row;
 
     System.out.println("Welcome to Gamba Slot Machine");
