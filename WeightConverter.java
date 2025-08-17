@@ -23,7 +23,6 @@ public class WeightConverter {
 
       System.out.println("Enter weight in kgs: ");
       weightInput = input.nextDouble();
-      input.nextLine();
       Outputweight = weightInput * 2.20462;
       System.out.println("Weight in lbs = " + Outputweight + "lbs");
     }
@@ -32,8 +31,6 @@ public class WeightConverter {
 
       System.out.println("Enter weight in lbs: ");
       weightInput = input.nextDouble();
-      input.nextLine();
-
       Outputweight = weightInput * 0.453592;
       System.out.println("Weight in kgs= " + Outputweight + "kgs");
     }
