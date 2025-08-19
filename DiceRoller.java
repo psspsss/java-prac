@@ -8,11 +8,15 @@ public class DiceRoller {
     int times;
     int total = 0;
     int dieNum = 0;
+    int target;
 
     Scanner input = new Scanner(System.in);
     Random random = new Random();
 
     System.out.println("Welcome to Dice Roller 🎲");
+
+    System.out.println("Enter TARGET dice number: ");
+    target = input.nextInt();
     System.out.println("Enter num of times you would like to roll: ");
     times = input.nextInt();
 
@@ -31,6 +35,18 @@ public class DiceRoller {
     }
     System.out.println("Your total comes out to be: ");
     System.out.println(total);
+
+    if (target == total) {
+      System.out.println("---------CONGRATULATIONS---------");
+      System.out.println();
+      System.out.println("             You Won             ");
+      System.out.println("            $1 Million           ");
+      System.out.println();
+      System.out.println("---------------------------------");
+    } else {
+      System.out.println("Sorry You Lost, Better luck next time...");
+      System.out.println();
+    }
 
     System.out.println("-------Thank You for Playing--------");
 
